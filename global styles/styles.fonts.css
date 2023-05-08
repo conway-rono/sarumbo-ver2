@@ -1,0 +1,81 @@
+p{
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+color: white;
+}
+p.welcome{
+    width: 100%;
+    height: auto;
+    text-align: left;
+    padding: 1rem;
+    text-shadow: 2px 1px 2px indigo;
+}
+@media screen and (min-width:600px){
+    p{
+        font-size: 26px;
+    }
+    p.welcome{
+        font-size: 46px;
+        font-weight: 800;
+    }
+    p.banner{
+        font-size: 18px;
+    }
+    span#simply-certified{
+        font-size: 24px;
+        font-weight: 400;
+    }
+    h1{
+        color: white;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 600;
+        font-size:46px;
+    }
+    h2{
+        color: rgb(146, 56, 214);
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 600;
+        font-size:34px;
+    }
+    span.specific-needs{
+        font-weight: 600;
+        text-decoration: underline;
+        font-size: 28px;
+    }
+}
+@media screen and (max-width:600px){
+    p{
+        font-size: 16px;
+    }
+    p.welcome{
+        font-size:28px;
+        font-weight: 600;
+    }
+    p.banner{
+        font-size: 14px;
+    }
+    span#simply-certified{
+        font-size: 14px;
+        font-weight: 400;
+    }
+    h1{
+        color: white;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 600;
+        font-size:26px;
+    }
+    h2{
+        color: rgb(146, 56, 214);
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 600;
+        font-size:24px;
+    }
+    span.specific-needs{
+        font-weight: 600;
+        text-decoration: underline;
+        font-size: 21px;
+    }
+}
+
+span.highlighted{
+    color: rgb(151, 98, 188);
+}

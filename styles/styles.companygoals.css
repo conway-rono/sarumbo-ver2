@@ -1,0 +1,21 @@
+.company-goals{
+    margin: 1rem;
+    margin-top: 3rem;
+}
+#secCompanyGoals{
+    background: url(../images/sp15.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.mask2{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    background-image: linear-gradient(to right,black,rgba(0, 0, 0, 0.601));
+    padding: 10vh 0;
+}
+

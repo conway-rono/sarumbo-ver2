@@ -1,0 +1,27 @@
+.header{
+    background-color: rgb(38, 46, 46);
+    background: url(../images/Construction-Site.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.maskheader{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.922),rgba(0, 0, 0, 0.259));
+}
+#card1{
+    margin-top: 35vh;
+}
+.paraSellingit{
+    color: grey;
+    margin-left: 1rem;
+    font-style: italic;
+    animation: fade-in 3s ease-in 1;
+}
+@keyframes fade-in {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    } 
+}

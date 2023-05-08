@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    min-height: 100vh;
+    background-color: rgb(38, 42, 42);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    color: white;
+    padding-top:10vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.screen{
+    width: 100%;
+    height: 100vh;
+    /* border: 2px solid white;
+    border-radius: 5px; */
+    background-color: rgb(20, 24, 24);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+
+}
+.slides{
+    flex: 0;
+    height: 100%;
+    box-shadow: -2px -2px 8px black;
+    overflow: hidden;
+}
+/* mask is the gradient tint on top of each slide */
+.mask{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.750),rgba(0, 0, 0, 0.100));
+}
+
+/* this animation does the expand and colapse func */
+ @keyframes burst {
+    0%{
+       flex:0;
+       font-size: 0px;
+    }
+    10%{
+        flex: 1;
+        font-size: 4rem;
+        font-weight: 700;
+    }
+    20%{
+        flex: 0;
+        font-size: 0px;
+    }
+    100%{
+        flex: 0;
+        font-size:0px;
+    }
+ }
+
+ /* this is the final slide */
+ @keyframes lasting{
+    0%{
+        flex:0;
+        display: block;
+    }
+    100%{
+        flex:1;
+        display: block;
+    }
+ }
+
+/* #slide1,#slide2,#slide3,#slide4,#slide5{
+
+} */
+#slide1{
+    background: url(../images/sp7.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: burst 10s ease-in-out 0s infinite;
+}
+
+#slide2{
+    background: url(../images/sp15.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: burst 10s ease-in-out 1s infinite;
+}
+
+#slide3{
+    background: url(../images/sp13.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: burst 10s ease-in-out 2s infinite;
+}
+
+#slide4{
+    background: url(../images/sp12.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: burst 10s ease-in-out 3s infinite;
+
+}
+
+#slide5{
+    background: url(../images/sp6.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: burst 10s ease-in-out 4s infinite;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+

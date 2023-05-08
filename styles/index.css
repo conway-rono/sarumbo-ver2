@@ -1,0 +1,33 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color: rgb(38, 42, 42);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.header,.section,.footer,.maskheader{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+.header,.section,.footer{
+    background-color: rgb(38, 42, 42);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.600),rgba(0, 0, 0, 0.100));
+}
+
+.page{
+    width: 98%;
+    max-width: 900px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}

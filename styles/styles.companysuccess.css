@@ -1,0 +1,67 @@
+.heading3{
+    margin-left: 1rem;
+}
+.mask4{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right,rgb(0, 0, 0),rgba(0, 0, 0, 0.441));
+}
+.slide2{
+    width: 100%;
+    max-width: 900px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin:2rem auto;
+    /* border: 1px solid white; */
+    border-radius: 5px;
+    overflow: hidden;
+}
+.box1,.box2{
+    width: 100%;
+}
+.box1{
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.box2{
+    height: 40%;
+    background-color: chartreuse;
+    background: url(../images/sp8.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slice1,.slice2{
+    flex:1;
+    height: 100%;
+    /* transition: all 300ms ease 50ms; */
+}
+.slice1{
+    background: url(../images/sp6.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: switch 4s ease-out 0s infinite forwards ;
+}
+.slice2{
+    background: url(../images/sp7.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: switch 4s ease-in-out 2s infinite forwards ;
+}
+@keyframes switch{
+    0%{
+        flex:0;
+    }
+    50%{
+        flex: 1;
+    }
+    100%{
+        flex:0;
+    }
+}
